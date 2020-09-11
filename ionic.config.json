@@ -1,0 +1,7 @@
+{
+  "name": "piscinadom",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

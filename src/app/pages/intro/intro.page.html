@@ -1,0 +1,29 @@
+<ion-content>
+  <section class="slide-home">
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let slide of appSildes">
+        <img [src]="slide.image" alt="" />
+        <div class="absolute caption-slider">
+          <div *ngIf="slide.description == 'Bienvenu'; else elseBlock ">
+            <h6>Piscinadom</h6>
+            <p>
+              <strong>{{ slide.description }}</strong><br />
+              {{ slide.title}}
+            </p>
+          </div>
+          <ng-template #elseBlock>
+            <p>
+              {{ slide.description }}
+              <strong>{{ slide.title}}</strong>
+            </p>
+          </ng-template>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </section>
+  <section class="bg-color-slide relative">
+    <ion-button routerLink="/login/intro" class="absolute btn-intro">
+      Entrez
+    </ion-button>
+  </section>
+</ion-content>
