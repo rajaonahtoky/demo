@@ -25,7 +25,6 @@ http://localhost:8100/dashboard/admin
     * Gestion Admin
 * Le menu principal
 * Les écrans (fake) de login
-* page Settings
 * Un squelette de code comportant des services pour les fonctions partagées de l'application
 
 ## Services utilisés 
